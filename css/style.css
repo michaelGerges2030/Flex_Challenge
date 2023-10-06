@@ -1,0 +1,123 @@
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 2rem;
+    margin: 2rem;
+    background-color: rgb(215, 234, 251);
+    line-height: 1.5em;
+}
+/* Primary or parent div */
+.contain{
+    width:95%;
+    margin: auto;
+    gap:20px;
+    display: flex;
+    justify-content: space-between;
+}
+.flexLeft{
+    width:70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.flexRight{
+    width: 25%;
+}
+
+/* common style in divs */
+.common, .lastPost, .post{
+    border-radius: 0.5rem;
+    padding: 2rem;
+}
+.postHeader{
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+img{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid rgb(189, 69, 69);
+    margin-right: 1rem;
+}
+h4{
+    color:white;
+}
+.desc{
+    color: rgb(189, 188, 188);
+    padding-top: 0.2rem;
+}
+.postBody .desc{
+    padding-top: 1rem;
+}
+
+/* first div in left flex */
+.firstPost{
+    width:65%;
+    background-color: blueviolet;
+}
+
+/* Second div in left flex */
+.secondPost{
+    width: 30%;
+    background-color: rgb(47, 46, 90);
+}
+
+/* Third div in the left flex */
+.thirdPost{
+    width:30%;
+    background-color: white;
+    margin-top: 2.5rem;
+}
+.thirdPost h4, .post h4{
+    color: black;
+}
+
+/* Last div in the left Flex */
+.fourthPost{
+    width:65%;
+    background-color: black;
+    margin-top: 2.5rem;
+}
+
+/* Right Flex */
+.post{
+    background-color: white;
+    height: 100%;
+}
+
+/* Media */
+@media (max-width: 1000px){
+    .flexLeft{
+        width: 100%;
+    }
+    .common{
+        width: 100%;
+    }
+    .secondPost{
+        margin-top: 2.5rem;
+    }
+}
+
+@media (max-width: 800px){
+    .contain{
+        flex-wrap: wrap;
+    }
+    .flexRight{
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px){
+    .postHeader{
+        display: block;
+    }
+    img{
+        margin-left: 1rem;
+    }
+}
