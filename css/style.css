@@ -14,7 +14,6 @@ body{
 .contain{
     width:95%;
     margin: auto;
-    gap:20px;
     display: flex;
     justify-content: space-between;
 }
@@ -100,6 +99,9 @@ h4{
     .common{
         width: 100%;
     }
+    .contain{
+        gap: 20px;
+    }
     .secondPost{
         margin-top: 2.5rem;
     }
@@ -107,10 +109,12 @@ h4{
 
 @media (max-width: 800px){
     .contain{
+        gap: 0px;
         flex-wrap: wrap;
     }
     .flexRight{
         width: 100%;
+        margin-top: 2.5rem;
     }
 }
 
